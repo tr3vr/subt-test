@@ -1,0 +1,184 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/expanded-card/expanded-card.html">
+
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      
+<div class="container flex-center-justified">
+<a href="http://submissions.iospress.com/applied-ontology" tabindex="-1">
+  <paper-button raised class="custom hover" >Link to submission system</paper-button>
+</a>
+
+
+</div>
+
+
+
+
+<div class="container flex-start-justified">
+  <a href="http://submissions.iospress.com/applied-ontology">
+<div id="example-full-width-container">
+  <iron-image id="example-full-width" alt="The Polymer logo." src="http://www.iospress.nl/wp-content/uploads/2011/07/157058381.jpg"></iron-image>
+  </a>
+  
+</div>
+
+
+
+</div>
+
+
+<h1>Applied Ontology</h1>
+      
+      <p>Argument & Computation (A&C) is an open access journal providing a dedicated venue for the dissemination of high quality papers concerning state-of-the-art advancements in the field of computational argumentation.</p>
+<p>
+A&C stands as an interdisciplinary journal by nature, lying at the crossing of the studies on artificial, natural and theoretical argumentation, acknowledging the richness of diversity and promoting integration.
+</p>
+<p>
+The journal welcomes submissions presenting original scientific results and innovative applications, relevant to this multi-faceted domain and addressing foundational, design, or implementation aspects of computational models and systems thereof, extending the state-of-the-art in research.
+
+</p>
+
+    </div>
+
+<style is="custom-style">
+  #example-full-width-container {
+    width: 200px;
+    border: 2px solid #444;
+    background: #444;
+  }
+
+  #example-full-width-container iron-image {
+    background: #ddd;
+  }
+
+  #example-full-width {
+    width: 100%;
+    --iron-image-width: 100%;
+  }
+
+  #example-half-width {
+    width: 50%;
+    --iron-image-width: 100%;
+  }
+</style>
+
+
+
+<style is="custom-style">
+  #example-sizing-contain {
+    width: 250px;
+    height: 250px;
+    background: #ddd;
+  }
+</style>
+
+
+
+ 
+<style is="custom-style">
+  .flex-center-justified {
+    @apply(--layout-horizontal);
+    @apply(--layout-center-justified);
+  }
+</style>
+
+
+<style is="custom-style">
+  .flex-end-justified {
+    @apply(--layout-horizontal);
+    @apply(--layout-end-justified);
+  }
+</style>
+
+<style is="custom-style">
+  .flex-start-justified {
+    @apply(--layout-horizontal);
+    @apply(--layout-start-justified);
+  }
+</style>
+<style>
+  a paper-button,
+  a:active paper-button,
+  a:visited paper-button {
+    color: #000;
+  }
+paper-button.custom {
+    --paper-button-ink-color: var(--paper-pink-a200);
+    /* These could also be individually defined for each of the
+      specific css classes, but we'll just do it once as an example */
+    --paper-button-flat-keyboard-focus: {
+      background-color: var(--paper-pink-a200);
+      color: white !important;
+    };
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+  paper-button.custom:hover {
+    background-color: var(--paper-indigo-100);
+  }
+  paper-button.pink {
+    color: var(--paper-pink-a200);
+
+  }
+  paper-button.indigo {
+    background-color: var(--paper-indigo-500);
+    color: white;
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+  paper-button.green {
+    background-color: var(--paper-green-500);
+    color: white;
+  }
+  paper-button.green[active] {
+    background-color: var(--paper-red-500);
+  }
+  paper-button.disabled {
+    color: white;
+  }
+
+
+</style>
+
+
+
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view1'
+    });
+  </script>
+</dom-module>

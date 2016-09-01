@@ -1,0 +1,170 @@
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/expanded-card/expanded-card.html">
+
+
+<dom-module id="my-view2">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <div class="card">
+      
+<div class="container flex-center-justified">
+<a href="http://submissions.iospress.com/argument-and-computation" tabindex="-1">
+  <paper-button raised class="custom hover" >Link to submission system</paper-button>
+</a>
+
+
+</div>
+
+
+
+
+<div class="container flex-start-justified">
+  
+
+  <a href="http://submissions.iospress.com/argument-and-computation">
+<div id="example-full-width-container">
+  <iron-image id="example-full-width" alt="The Polymer logo." src="http://submissions.iospress.com/argument-and-computation/sites/default/files/AAC-148x215.jpg"></iron-image>
+</div>
+</a>
+
+
+</div>
+
+
+<h1>Argument & Computation</h1>
+      
+      <p>
+      Applied Ontology focuses on information content in its broadest sense. As the subtitle makes clear, two broad kinds of content-based research activities are envisioned: ontological analysis and conceptual modeling. The former includes any attempt to investigate the nature and structure of a domain of interest using rigorous philosophical or logical tools; the latter concerns the cognitive and linguistic structures we use to model the world, as well as the various analysis tools and methodologies we adopt for producing useful computational models, such as information systems schemes or knowledge structures. Applied Ontology is the first journal with explicit and exclusive focus on ontological analysis and conceptual modeling under an interdisciplinary view. It aims to establish a unique niche in the realm of scientific journals by carefully avoiding unnecessary duplication with discipline-oriented journals. For this reason, authors will be encouraged to use language that will be intelligible also to those outside their specific sector of expertise, and the review process will be tailored to this end. For example, authors of theoretical contributions will be encouraged to show the relevance of their theory for applications, while authors of more technological papers will be encouraged to show the relevance of a well-founded theoretical perspective. Moreover, the journal will publish papers focusing on representation languages or algorithms only where these address relevant content issues, whether at the level of practical application or of theoretical understanding. Similarly, it will publish descriptions of tools or implemented systems only where a contribution to the practice of ontological analysis and conceptual modeling is clearly established.
+</p>
+
+    </div>
+
+<style is="custom-style">
+  #example-full-width-container {
+    width: 200px;
+    border: 2px solid #444;
+    background: #444;
+  }
+
+  #example-full-width-container iron-image {
+    background: #ddd;
+  }
+
+  #example-full-width {
+    width: 100%;
+    --iron-image-width: 100%;
+  }
+
+  #example-half-width {
+    width: 50%;
+    --iron-image-width: 100%;
+  }
+</style>
+
+
+
+<style is="custom-style">
+  #example-sizing-contain {
+    width: 250px;
+    height: 250px;
+    background: #ddd;
+  }
+</style>
+
+
+
+ 
+<style is="custom-style">
+  .flex-center-justified {
+    @apply(--layout-horizontal);
+    @apply(--layout-center-justified);
+  }
+</style>
+
+
+<style is="custom-style">
+  .flex-end-justified {
+    @apply(--layout-horizontal);
+    @apply(--layout-end-justified);
+  }
+</style>
+
+<style is="custom-style">
+  .flex-start-justified {
+    @apply(--layout-horizontal);
+    @apply(--layout-start-justified);
+  }
+</style>
+<style>
+  a paper-button,
+  a:active paper-button,
+  a:visited paper-button {
+    color: #000;
+  }
+paper-button.custom {
+    --paper-button-ink-color: var(--paper-pink-a200);
+    /* These could also be individually defined for each of the
+      specific css classes, but we'll just do it once as an example */
+    --paper-button-flat-keyboard-focus: {
+      background-color: var(--paper-pink-a200);
+      color: white !important;
+    };
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+  paper-button.custom:hover {
+    background-color: var(--paper-indigo-100);
+  }
+  paper-button.pink {
+    color: var(--paper-pink-a200);
+
+  }
+  paper-button.indigo {
+    background-color: var(--paper-indigo-500);
+    color: white;
+    --paper-button-raised-keyboard-focus: {
+      background-color: var(--paper-pink-a200) !important;
+      color: white !important;
+    };
+  }
+  paper-button.green {
+    background-color: var(--paper-green-500);
+    color: white;
+  }
+  paper-button.green[active] {
+    background-color: var(--paper-red-500);
+  }
+  paper-button.disabled {
+    color: white;
+  }
+
+
+</style>
+
+
+
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view2'
+    });
+  </script>
+</dom-module>
