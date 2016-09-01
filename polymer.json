@@ -1,5 +1,5 @@
 {
-  "entrypoint": "index.html",
+  "entrypoint": "https://tr3vr.github.io/subt-test/index.html",
   "shell": "src/my-app.html",
   "fragments": [
     "src/my-view1.html",
